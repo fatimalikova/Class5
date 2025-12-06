@@ -5,6 +5,9 @@
         static void Main(string[] args)
         {
             //deligate, action, func, predicate
+            args.ToList().ForEach(arg => Console.WriteLine(arg));
+            Program program = new Program();
+            program.MyMethod();
         }
 
         public delegate int MyDeligate(int x, int y);
